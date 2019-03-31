@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Bloody Weather</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/onsenui@2.10.6/css/onsenui.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/onsenui@2.10.6/css/onsen-css-components.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    <script src="https://cdn.jsdelivr.net/npm/onsenui@2.10.6/js/onsenui.min.js"></script>
+  </head>
+  <body>
+    <h1 id ="header">The Bloody Weather</h1>
+    <div class="container">
+      <fieldset>
+        <form action="/" method="post">
+          <ons-input name="zip" type="text" class="ghost-input" placeholder="Enter your zip" required></ons-input>
+          <ons-input type="submit" class="ghost-button" value="Get Weather"></ons-input>
+        </form>
+        <% if(phrase !== null){ %>
+          <h2><%= phrase %></h2>
+        <% } %>
+        <% if(weather !== null){ %>
+          <p><%= weather %></p>
+        <% } %>
+
+        <% if(error !== null){ %>
+          <p><%= error %></p>
+        <% } %>
+      </fieldset>
+    </div>
+  </body>
+</html>
