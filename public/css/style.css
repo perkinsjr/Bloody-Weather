@@ -117,12 +117,12 @@
   
   @media (min-width: 320px) and (max-width: 480px) {
     #phrase {
-        font-size: 30px;
+        font-size: 20px;
         text-align: center
     }
 
     #temp {
-        font-size: 158pxpx;
+        font-size: 15px;
         padding: 20px;
         text-align: center;
     }
@@ -187,15 +187,16 @@
     cursor: pointer;
     align-content: center;
   }
-  p {
-    color: #E64A19;
-  }
 
   input {
     text-align: center;
   }
 
-  #header {
+  #header, #phrase , #temp {
     color: #111; font-family: 'Helvetica Neue', sans-serif;  font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: center;
   }
  
+  #temp {
+    color: red;
+    font-size: 30px;
+  }

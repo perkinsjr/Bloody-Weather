@@ -12,14 +12,22 @@
     <script src="https://cdn.jsdelivr.net/npm/onsenui@2.10.6/js/onsenui.min.js"></script>
   </head>
   <body>
-      <h1 id ="header">How <img src="/img/flag.svg" alt="British" height="42" width="96"> is the Weather?</h1>
+    <h1 id ="header">How <img src="/img/flag.svg" alt="British" height="42" width="96"> is the Weather?</h1>
     <div class="container">
       <fieldset>
-        <form action="/" method="post">
-          <ons-input name="zip" type="text" class="ghost-input" placeholder="Enter your zip" required></ons-input>
-          <ons-input id="weatherclick" type="submit" value="To Have A Butcher’s"></ons-input>
-        </form>
-      </fieldset>
+          
+        <% if(phrase !== null){ %>
+          <div id ="phrase"><%= phrase %></div>
+        <% } %>
+        <% if(weather !== null){ %>
+          <div id = "temp"><%= weather %> &#8457</div>
+        <% } %>
+        <% if(error !== null){ %>
+          <p><%= error %></p>
+        <% } %>
+        <div style="width:100%;height:0;padding-bottom:50%;position:relative;"><iframe src="https://giphy.com/embed/b5TmEXrjZ2II8" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed"></iframe></div>
+    </fieldset>
+      
     </div>
   </body>
 </html>

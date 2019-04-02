@@ -4,19 +4,18 @@ var hot = [
     "Fucking lovely, my setbelt burnt my hand"
 ];
 var warm = [
-    "This weather is A fucking Ok",
-    "Warm enough to enjoy without getting swamp ass",
-    "Cold to some, heaven to others."
+    "Fucking hell, get your shorts on.. and head down to the beer garden",
+    "The weather is dench",
+    "Give ya friend a tinkle on the blower, it's lovely jubbley out there!"
 ];
 var cool = [
-    "This weather is almost colder than my heart.",
-    "It's clder than a whore's heart.",
-    "It's colder than thhe underside of a penguin's ballsack",
-    "It's so cold I saw lawyers with their hands in their own pockets!"
+    "It's too cold, my twigs and berries have fucked off",
+    "Bring your Anorak, its probably raining and its cold!",
+    "Bog-standard day, bring a coat! Ya Twat"
 ];
 var cold = [
-    "It's so cold that the local flasher was caught *describing* himself to women.",
-    "It's so cold that the Statue of Liberty put the torch INSIDE her dress. ",
+    "I'd be telling pork pies, if I said it was lovely outside",
+    "You'd probably get the lurggy if you go outside, time for a cuppa!"
 ];
 
 function description () {

@@ -29,7 +29,7 @@ app.post('/', function (req, res) {
   request(url, function (err, response, body) {
     if (err) {
       console.log(err);
-      res.render('index', {
+      res.render('weather', {
         weather: null,
         phrase: null,
         error: 'Error, please try again, nothing returned'
@@ -38,19 +38,16 @@ app.post('/', function (req, res) {
       let weather = JSON.parse(body)
       console.log(weather);
       if (weather.main == undefined) {
-        res.render('index', {
+        res.render('weather', {
           weather: null,
           phrase: null,
           error: 'Error, please try again, undefined'
         });
       } else {
-        let description = weather.weather.id;
-        let temp = weather.main.temp;
+        let temp = Math.round(weather.main.temp);
         let phrasetext = helper.temp(temp);
-
-        let weatherText = `${weather.main.temp} degrees in ${weather.name}`;
-        res.render('index', {
-          weather: weatherText,
+        res.render('weather', {
+          weather: temp,
           error: null,
           phrase: phrasetext,
         });
