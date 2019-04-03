@@ -1,202 +1,83 @@
+body {
+  background: #D3D3D3;
+}
 
-/* 
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
 
-@media (min-width: 1281px) {
+.footer {
+  background: #c0bdbd;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width:100%;
+}
+.footer a {
+  color: #70726F;
+  font-size: 20px;
+  padding: 10px;
+  transition: all .5s ease;
+}
 
-    #header{
-        font-size: 120px;
-    }
+.footer a:hover {
+  color: 70726F;
+}
+#header {
+  text-align: center;
+  padding-bottom: 40px;
+}
 
-    #phrase {
-        font-size: 75px;
-        text-align: center
-    }
+::-webkit-input-placeholder {
+  text-align: center;
+}
 
-    #temp {
-        font-size: 50px;
-        padding: 20px;
-        text-align: center;
-    }
-    
-  }
+:-moz-placeholder { /* Firefox 18- */
+  text-align: center;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  text-align: center;  
+}
+
+:-ms-input-placeholder {  
+  text-align: center; 
+}
+#weatherclick{
+  background: #c0bdbd;
+  color:black;
+}
+input{
+  text-align:center;
+  margin-bottom: 20px !important;
+}
+
+.content {
+  min-width: 300px;
+  height: 200px;
+  max-width: 65%;
   
-  /* 
-    ##Device = Laptops, Desktops
-    ##Screen = B/w 1025px to 1280px
-  */
-  
-  @media (min-width: 1025px) and (max-width: 1280px) {
-    
-    #header{
-        font-size: 100px;
-    }
-    #phrase {
-        font-size: 50px;
-        text-align: center
-    }
+  position:absolute; /*it can be fixed too*/
+  left:0; right:0;
+  top:0; bottom:0;
+  margin:auto;
 
-    #temp {
-        font-size: 25px;
-        padding: 20px;
-        text-align: center;
-    }
-    
-  }
-  
-  /* 
-    ##Device = Tablets, Ipads (portrait)
-    ##Screen = B/w 768px to 1024px
-  */
-  
-  @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-        
-    #header{
-        font-size: 75px;
-    }
-    #phrase {
-        font-size: 50px;
-        text-align: center
-    }
+  /*this to solve "the content will not be cut when the window is smaller than the content": */
+  max-height:100%;
+  overflow:hidden;
+}
 
-    #temp {
-        font-size: 25px;
-        padding: 20px;
-        text-align: center;
-    }
-  }
-  
-  /* 
-    ##Device = Tablets, Ipads (landscape)
-    ##Screen = B/w 768px to 1024px
-  */
-  
-  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    #header{
-        font-size: 75px;
-    }
-    #phrase {
-        font-size: 50px;
-        text-align: center
-    }
+.weather-content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
 
-    #temp {
-        font-size: 25px;
-        padding: 20px;
-        text-align: center;
-    }
-  }
-  
-  /* 
-    ##Device = Low Resolution Tablets, Mobiles (Landscape)
-    ##Screen = B/w 481px to 767px
-  */
-  
-  @media (min-width: 481px) and (max-width: 767px) {
-    #header{
-        font-size: 50px;
-    }
-    #phrase {
-        font-size: 30px;
-        text-align: center
-    }
-
-    #temp {
-        font-size: 158pxpx;
-        padding: 20px;
-        text-align: center;
-    }
-  }
-  
-  /* 
-    ##Device = Most of the Smartphones Mobiles (Portrait)
-    ##Screen = B/w 320px to 479px
-  */
-  
-  @media (min-width: 320px) and (max-width: 480px) {
-    #phrase {
-        font-size: 20px;
-        text-align: center
-    }
-
-    #temp {
-        font-size: 15px;
-        padding: 20px;
-        text-align: center;
-    }
-  }
-
-
-  fieldset {
-    display: block;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    -webkit-padding-before: 0em;
-    -webkit-padding-start: 0em;
-    -webkit-padding-end: 0em;
-    -webkit-padding-after: 0em;
-    border: 0px;
-    border-image-source: initial;
-    border-image-slice: initial;
-    border-image-width: initial;
-    border-image-outset: initial;
-    border-image-repeat: initial;
-    min-width: -webkit-min-content;
-    padding: 30px;
-  }
-
-  .text-input{
-      background-image: none !important;
-  }
-
-  .ghost-input{
-    display: block;
-    font-weight:300;
-    width: 100%;
-    font-size: 25px;
-    border:0px;
-    outline: none;
-    text-align: center;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    color: #4b545f;
-    background-image: none;
-    font-family: Open Sans,Verdana;
-    padding: 10px 15px;
-    -webkit-transition: all 0.1s ease-in-out;
-    -moz-transition: all 0.1s ease-in-out;
-    -ms-transition: all 0.1s ease-in-out;
-    -o-transition: all 0.1s ease-in-out;
-    transition: all 0.1s ease-in-out;
-    
-  }
-
-  #weatherclick {
-    display: block;
-             margin : 0 auto;
-    background-color: rgb(199, 199, 199);
-    border: none;
-    min-width: 100px;
-    color: white;
-    padding: 16px 32px;
-    text-decoration: none;
-    margin: 4px 2px;
-    cursor: pointer;
-    align-content: center;
-  }
-
-  input {
-    text-align: center;
-  }
-
-  #header, #phrase , #temp {
-    color: #111; font-family: 'Helvetica Neue', sans-serif;  font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: center;
-  }
- 
-  #temp {
-    color: red;
-    font-size: 30px;
-  }
+#phrase {
+  text-align: center;
+  padding-bottom: 15px;
+}
+#temp{
+  text-align: center;
+  color:red;
+  padding-bottom: 25px;
+}
