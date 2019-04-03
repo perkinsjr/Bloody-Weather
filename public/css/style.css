@@ -25,6 +25,12 @@ body {
   padding-bottom: 40px;
 }
 
+#subheader {
+  text-align: center;
+  padding-bottom: 40px;
+  padding-top: 50px;
+}
+
 ::-webkit-input-placeholder {
   text-align: center;
 }
@@ -70,8 +76,12 @@ input{
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+ 
 }
-
+#englishimg{
+  display: block;
+  margin: 0 auto;
+}
 #phrase {
   text-align: center;
   padding-bottom: 15px;
@@ -80,4 +90,11 @@ input{
   text-align: center;
   color:red;
   padding-bottom: 25px;
+}
+#restart{
+  max-width: 45%;
+  display: block;
+  margin: 0 auto;
+  background: #c0bdbd;
+  color:black;
 }
