@@ -92,9 +92,6 @@ input{
   padding-bottom: 25px;
 }
 #restart{
-  max-width: 45%;
-  display: block;
-  margin: 0 auto;
   background: #c0bdbd;
   color:black;
 }
